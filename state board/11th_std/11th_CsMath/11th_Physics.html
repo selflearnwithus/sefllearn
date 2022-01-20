@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
+    <!-- title changes -->
+    <title>11th Physics selfLearnwithus</title>
+    <!-- title changes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../subjects.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="learned-logo">
+                <a href="index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
+            </div>
+            <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+            <ul id="list-switch" style="display: flex;">
+                <li>
+                    <a href="11th_Tamil.html"><img src="../images/courses/d1.png" class="icon" style="width: 30px;">Tamil</a>
+                </li>
+                <li>
+                    <a href="11th_English.html"><img src="../images/courses/paper.png" class="icon">English</a>
+                </li>
+                <li>
+                    <a href="11th_Maths.html"><img src="../images/icon/icon_maths.png" class="icon" style="width: 25px;">Maths</a>
+                </li>
+                <li>
+                    <a href="11th_Physics.html"><img src="../images/courses/algo.png" class="icon">Physics</a>
+                </li>
+                <li>
+                    <a href="11th_Chemistry.html"><img src="../images/courses/projects.png" class="icon">Chemistry</a>
+                </li>
+                <li>
+                    <a href="11th_Computer_Science.html"><img src="../images/courses/computer.png" class="icon">Computer </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- MAIN Heading of Page -->
+    <div class="title">
+        <!-- subjects -->
+        <span>Physics on <br>Self Learn With Us</span>
+        <div class="shortdesc">
+            <p>Try not to become a man of success<br>Rather try to become a man of value<br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ~ Albert Einstein</p>
+        </div>
+    </div>
+
+    <!-- img -->
+
+    <center>
+        <div class="svg-image">
+            <img src="../image/albert-einstein.jpg" alt="Physics">
+        </div>
+    </center>
+
+    <!-- Some KeyWords related to Topic -->
+    <!-- <div class="course">
+        <div class="cbox">
+            <div class="det"><a href="">Chapter 1</a></div>
+            <div class="det"><a href="">Chapter 2</a></div>
+            <div class="det"><a href="">Chapter 3 </a></div>
+            <div class="det"><a href="">Chapter 4 </a></div>
+            <div class="det"><a href="">Chapter 5 </a></div>
+            <div class="det"><a href="">Chapter 6</a></div>
+        </div>
+
+        <div class="cbox">
+            <div class="det"><a href="">Chapter 7</a></div>
+            <div class="det"><a href="">Chapter 8</a></div>
+            <div class="det"><a href="">Chapter 9</a></div>
+        </div>
+    </div> -->
+
+    <!-- Materials Available -->
+    <div class="inbt">
+        Materials for Physics
+    </div>
+
+    <div class="ccard">
+        <center>
+            <div class="ccardbox">
+                <div class="dcard">
+                    <!--  -->
+                    <div class="fpart">
+
+                        <!-- download pdf file -->
+                        <img src="../image/books.jpg" id="myBtn">
+
+                        <!-- pop up style  -->
+
+                    </div>
+                    <!--  -->
+                    <a href="#java">
+                        <div class="spart"> download <img src="../images/icon/dropdown.png"></div>
+                    </a>
+                </div>
+
+
+                <div class="dcard">
+
+                    <!--  -->
+
+
+                    <div class="fpart">
+
+                        <img src="../image/study_material.jpg" id="myBtn1">
+
+                    </div>
+                    <!--  -->
+
+
+                    <a href="#python">
+                        <div class="spart"> download <img src="../images/icon/dropdown.png"></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </center>
+    </div>
+
+
+    <!-- pop up for Download  Book-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Self Learn With Us</h2>
+            </div>
+            <div class="modal-body">
+                <form action="./backend/order.php" method="POST" id="LoginForm">
+                    <input type="text" name="customer_name" placeholder="Your Name" required /><br>
+                    <!-- <input type="tel"
+                    name="phone_number"
+                    id="phone_number"
+                    pattern="^\d{10}$"
+                    placeholder="Phone No."
+                    required="required"
+                /> -->
+                    <input type="email" id="email" size="30" placeholder="Email" required>
+                    <!-- <textarea placeholder="Your Address" name="customer_address" id="" rows="6" required></textarea> -->
+                    <a href="/PDF/english poem.pdf">
+                        <button type="submit" class="btn" style="background-color: #ffffff; color: black;">Download Now TM</button>
+                    </a>
+                </form>
+
+            </div><br>
+            <div class="modal-footer">
+                <h3>selflearnwithus@gmail.com</h3>
+            </div>
+        </div>
+
+    </div>
+    <!-- pop up for downloard close -->
+
+    <!--  -->
+
+    <!-- pop up for Download material-->
+    <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close1">&times;</span>
+                <h2>Self Learn With Us</h2>
+            </div>
+            <div class="modal-body">
+                <form action="./backend/order.php" method="POST" id="LoginForm">
+                    <input type="text" name="customer_name" placeholder="Your Name" required /><br>
+                    <!-- <input type="tel"
+                    name="phone_number"
+                    id="phone_number"
+                    pattern="^\d{10}$"
+                    placeholder="Phone No."
+                    required="required"
+                /> -->
+                    <input type="email" id="email" size="50" placeholder="Email" required>
+                    <!-- <textarea placeholder="Your Address" name="customer_address" id="" rows="6" required></textarea> -->
+
+                    <!-- pdf download link -->
+                    <a href="PDF/english poem.pdf">
+                        <button type="submit" class="btn" style="background-color: #ffffff; color: black;">Download Now TM</button>
+                    </a>
+                    <!--  -->
+                </form>
+
+            </div><br>
+            <div class="modal-footer">
+                <h3>selflearnwithus@gmail.com</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!--  -->
+
+    <!-- Courses Available -->
+    <!-- <div class="inbt">
+        Learn Science
+    </div> -->
+
+    <!-- <div class="ccard">
+        <center> -->
+    <!-- <div class="ccardbox">
+                <div class="dcard"> -->
+    <!--  -->
+    <!-- <div class="fpart"><img src="image/Science_thumbnail.png"></div> -->
+    <!--  -->
+    <!-- <a href="#java">
+                        <div class="spart">2 Courses <img src="../images/icon/dropdown.png"></div>
+                    </a> -->
+    <!-- </div>
+                <div class="dcard"> -->
+    <!--  -->
+    <!-- <div class="fpart"><img src="image/Science_thumbnail.png"></div> -->
+    <!--  -->
+    <!-- <a href="#python">
+                        <div class="spart">5 Courses <img src="../images/icon/dropdown.png"></div>
+                    </a>
+                </div> -->
+    <!-- <div class="dcard"> -->
+    <!--  -->
+    <!-- <div class="fpart"><img src="image/Science_thumbnail.png"></div> -->
+    <!--  -->
+    <!-- <a href="#c++"> -->
+    <!-- <div class="spart">3 Courses <img src="../images/icon/dropdown.png"></div>
+                    </a> -->
+    <!-- </div>
+            </div> -->
+    <!-- <div class="ccardbox">
+                <div class="dcard"> -->
+    <!--  -->
+    <!-- <div class="fpart"><img src="image/Science_thumbnail.png"></div> -->
+    <!--  -->
+    <!-- <a href="#html_css">
+                        <div class="spart">6 Courses <img src="../images/icon/dropdown.png"></div>
+                    </a> -->
+    <!-- </div>
+                <div class="dcard"> -->
+    <!--  -->
+    <!-- <div class="fpart"><img src="image/Science_thumbnail.png"></div> -->
+    <!--  -->
+    <!-- <a href="#data">
+                        <div class="spart">2 Courses <img src="../images/icon/dropdown.png"></div>
+                    </a>
+                </div> -->
+    <!-- <div class="dcard">
+                    <div class="fpart"><img src="image/Science_thumbnail.png"></div>
+                    <a href="#algo">
+                        <div class="spart">1 Courses <img src="../images/icon/dropdown.png"></div>
+                    </a>
+                </div>
+            </div>
+        </center>
+    </div> -->
+
+
+    <!-- Videos on summary -->
+    <div class="title2" id="summary">
+        <span>Start Learning</span>
+        <div class="shortdesc2">
+            <p>Practice and Practice to get a good marks in Physics</p>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="../images/icon/logo - Copy.png" style="width: 200px;">
+                <div class="logo"></div>
+                <div class="social-media">
+                    <a href="#"><img src="../images/icon\fb.png"></a>
+                    <a href="#"><img src="../images/icon\insta.png"></a>
+                    <a href="#"><img src="../images/icon\tt.png"></a>
+                    <a href="#"><img src="../images/icon\ytube.png"></a>
+                    <a href="#"><img src="../images/icon\linkedin.png"></a>
+                </div><br />
+            </div>
+            <div class="center-col">
+                <p><img src="../images/icon/location.png"> Self Learn With Us Organization<br>Salem, Tamil Nadu-636002</p>
+                <br>
+                <p><img src="../images/icon/phone.png"> +91-xxxx-xxxx<br><img src="../images/icon/mail.png">&nbsp; selflearnwithus@gmail.com
+                </p>
+
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">Our Newsletter</h1>
+                <div class="border"></div><br>
+                <p>Enter Your Email to get our News and updates.</p>
+                <form class="newsletter-form">
+                    <input class="txtb" type="email" placeholder="Enter Your Email">
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <p class="rights-text copyright">Copyright © 2021 Created By Kishore Kumar, Vineeth, Lenin John Paul All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal1");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn1");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close1")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+        /* Add Animation */
+        
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+        /* The Close Button */
+        
+        .close,
+        .close1 {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close1:hover,
+        .close:focus,
+        .close1:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 15px;
+            background-color: #f8574c;
+            color: white;
+            flex-direction: row-reverse;
+        }
+        
+        .modal-body {
+            padding: 2px 16px;
+        }
+        
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #f8574c;
+            color: white;
+        }
+        
+        #LoginForm input[type="text"],
+        #LoginForm textarea,
+        #LoginForm input[type="tel"],
+        #LoginForm input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        
+        .modal-body #LoginForm button {
+            display: inline-block;
+            background-color: #fff;
+            color: #fff;
+            padding: 10px 30px;
+            margin: 30px 0;
+        }
+    </style>
+
+
+</body>
+
+</html>
